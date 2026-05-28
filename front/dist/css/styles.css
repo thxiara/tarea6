@@ -1,0 +1,26 @@
+:root{
+    --color-claro:#fafafa;
+    --color-oscuro:#333333;
+    --color-alt:#756B9B;
+    --color-highlight:#AFDED6;
+}
+.logo-navbar{
+    height:50px;
+}
+body{
+    background-color:var(--color-claro);
+}
+.navbar{
+    background-color:var(--color-alt);
+}
+.navbar .nav-link {
+    color: var(--color-highlight) !important;
+}
+.navbar .nav-link:hover {
+    color: var(--color-claro) !important;
+}
+.navbar-toggler,.navbar-toggler:focus,.navbar-toggler:active,.navbar-toggler-icon:focus {
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
