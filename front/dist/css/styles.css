@@ -84,6 +84,9 @@ footer p{
 .navbar .nav-link.active {
     color:var(--color-claro) !important;
 }
+.navbar-toggler-icon{
+    background-image: url("../assets/iconos/menu\ burguer.svg") !important;
+}
 /* botones */
 .boton{
     border-top-left-radius: 10px;
