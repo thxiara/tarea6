@@ -4,6 +4,30 @@
     --color-alt:#756B9B;
     --color-highlight:#AFDED6;
 }
+@media screen and (min-width:992px) {
+    .card {
+        width: calc(100%/3);
+    }
+    .card-imagen{
+    height:20vw;
+    }
+}
+@media screen and (min-width:768px) and (max-width:993px) {
+    .card{
+        width:calc(100%/2);
+    }
+    .card-imagen{
+        height:30vw;
+    }
+}
+@media screen and (max-width:767px) {
+    .card{
+        width:100%;
+    }
+    .card-imagen{
+        height:50vw;
+    }
+}
 /*  general */
 body{
     background-color:var(--color-claro);
@@ -57,6 +81,9 @@ footer p{
     outline: none !important;
     box-shadow: none !important;
 }
+.navbar .nav-link.active {
+    color:var(--color-claro) !important;
+}
 /* botones */
 .boton{
     border-top-left-radius: 10px;
@@ -100,27 +127,34 @@ footer p{
     border-top-left-radius: 30px;
     border-top-right-radius:30px;
 }
-@media screen and (min-width:992px) {
-    .card {
-        width: calc(100%/3);
-    }
-    .card-imagen{
-    height:20vw;
-    }
+/* Panel admin */
+.nav-tabs .nav-link {
+    color: var(--color-alt);
+    font-weight: bold;
+    border: none;
 }
-@media screen and (min-width:768px) and (max-width:993px) {
-    .card{
-        width:calc(100%/2);
-    }
-    .card-imagen{
-        height:30vw;
-    }
+.nav-tabs .nav-link:hover {
+    color: var(--color-oscuro);
+    border: none;
 }
-@media screen and (max-width:767px) {
-    .card{
-        width:100%;
-    }
-    .card-imagen{
-        height:50vw;
-    }
+
+.nav-tabs .nav-link.active {
+    color: var(--color-highlight) !important;
+    background-color: var(--color-alt) !important;
+    border-radius: 10px 10px 0 0;
+}
+.table-dark, .table-dark th {
+    background-color: var(--color-alt) !important;
+    color: var(--color-highlight) !important;
+    border-bottom: none;
+}
+.table {
+    color: var(--color-oscuro);
+}
+.modal-header {
+    background-color: var(--color-alt);
+    color: var(--color-highlight);
+}
+.modal-header .modal-title {
+    color: var(--color-highlight) !important;
 }
