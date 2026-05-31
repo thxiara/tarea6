@@ -57,6 +57,9 @@ footer p{
     outline: none !important;
     box-shadow: none !important;
 }
+.navbar-toggler-icon{
+    background-image: url("../assets/iconos/menu\ burguer.svg") !important;
+}
 /* botones */
 .boton{
     border-top-left-radius: 10px;
