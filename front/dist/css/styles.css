@@ -54,6 +54,9 @@ footer p{
 .fondo-c{
     background-color:var(--color-highlight);
 }
+.missing{
+    border: 3px var(--color-alt) dashed;
+}
 /* nav */
 .logo-navbar{
     height:50px;

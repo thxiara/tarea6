@@ -1,0 +1,83 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <script src="../js/bootstrap.bundle.min.js.js"></script>
+        <link rel="stylesheet" href="../css/styles.css">
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-lg fixed-top">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="../assets/iconos/kitty diente professional malvada.svg" alt="Logo Kitty" class="logo-navbar">
+                    </a>
+        
+                    <a class="navbar-brand" href="index.html">Nombre</a>
+        
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuBurger" aria-controls="menuBurger" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>       
+        
+                    <div class="collapse navbar-collapse" id="menuBurger">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item me-3">
+                                <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                            </li>
+        
+                            <li class="nav-item me-3">
+                                <a class="nav-link" href="vista-admin.html">Panel de admin</a>
+                            </li>
+                            
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Page 3</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <div class="mb-5" id="next_cita">
+                <h2 class = "text-center">Siguiente cita</h2>
+
+                <div id="no_cita" class= "d-flex flex-column mx-auto align-items-center p-4 rounded missing col-10 col-lg-5">
+                    <p>No tiene ninguna cita</p>
+                    <button class="btn boton-a">Agendar cita</button>
+                </div>
+
+                <div id="yes_cita">
+                    <p>algo</p>
+                </div>
+            </div>
+            <div class="col-12 col-lg-10 mx-auto table-responsive" id="cita_history">
+                <table class="table table-hover table-striped">
+                    <thead class="table-dark">
+                        <tr>
+                            <th>Fecha</th>
+                            <th>Hora</th>
+                            <th>Odontólogo</th>
+                            <th>Tratamiento</th>
+                            <th>Estado</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Lunes 15/6/07</td>
+                            <td>0:42</td>
+                            <td>My Melody</td>
+                            <td>Trepanación</td>
+                            <td>Hecha</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div> </div>
+        </main>
+
+        <footer>
+
+        </footer>
+    </body>
+</html>
