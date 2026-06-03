@@ -40,7 +40,7 @@
 
         <main>
             <div class="mb-5" id="next_cita">
-                <h2 class = "text-center">Siguiente cita</h2>
+                <h2 class = "text-center mb-4">Siguiente cita</h2>
 
                 <div id="no_cita" class= "d-flex flex-column mx-auto align-items-center p-4 rounded missing col-10 col-lg-5">
                     <p>No tiene ninguna cita</p>
@@ -51,38 +51,38 @@
                     <div class="modal-dialog modal-dialog-centered">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h3>Agendar nueva cita</h3>
+                                <h4 class="m-0">Agendar nueva cita</h3>
                                 <button class="btn-close" data-bs-dismiss="modal"> </button>
                             </div>
 
                             <div class="modal-body">
                                 <form class="d-flex flex-row flex-wrap gap-3 justify-content-center">
-                                    <div class="col-5">
+                                    <div class="container-fluid col-lg-5">
                                         <label for="date">Fecha</label>
                                         <input id="date" class="form-control" type="date">
                                     </div>
                                     
-                                     <div class="col-5">
+                                     <div class="container-fluid col-lg-5">
                                         <label for="time">Hora</label>
                                         <input id="time" class="form-control" type="time">
                                     </div>
                                     
-                                    <div class="col-5">
+                                    <div class="container-fluid col-lg-5">
                                         <label for="firstName">Nombre</label>
                                         <input id="firstName" class="form-control" type="text">
                                     </div>
     
-                                    <div class="col-5">
+                                    <div class="container-fluid col-lg-5">
                                         <label for="lastName">Apellidos</label>
                                         <input id="lastName" class="form-control" type="text">
                                     </div>
                                     
-                                    <div class="col-5">
+                                    <div class="container-fluid col-lg-5">
                                         <label for="phone">Teléfono</label>
                                         <input id="phone" class="form-control" type="tel">
                                     </div>
     
-                                     <div class="col-5">
+                                     <div class="container-fluid col-lg-5">
                                         <label for="treatment">Tratamiento</label>
                                         <select id="treatment" class="form-select">
                                             <option selected hidden value="">Motivo de cita</option>
@@ -99,33 +99,56 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-lg-10 mx-auto table-responsive" id="cita_history">
-                <table class="table table-hover table-striped">
-                    <thead class="table-dark">
-                        <tr>
-                            <th>Fecha</th>
-                            <th>Hora</th>
-                            <th>Odontólogo</th>
-                            <th>Tratamiento</th>
-                            <th>Estado</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Lunes 15/6/07</td>
-                            <td>0:42</td>
-                            <td>My Melody</td>
-                            <td>Trepanación</td>
-                            <td>Hecha</td>
-                        </tr>
-                    </tbody>
-                </table>
+
+            <div id="cita_history" class="col-12 col-lg-10 mx-auto">
+                <h2 class="text-center text-lg-start mb-4">Historial de citas</h2>
+                
+                <div class="table-responsive">
+                    <table class="table table-hover table-striped">
+                        <thead class="table-dark">
+                            <tr>
+                                <th>Fecha</th>
+                                <th>Hora</th>
+                                <th>Odontólogo</th>
+                                <th>Tratamiento</th>
+                                <th>Estado</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>Lunes 15/6/07</td>
+                                <td>0:42</td>
+                                <td>My Melody</td>
+                                <td>Trepanación</td>
+                                <td>Hecha</td>
+                            </tr>
+
+                            <tr>
+                                <td>Lunes 15/6/07</td>
+                                <td>0:42</td>
+                                <td>My Melody</td>
+                                <td>Trepanación</td>
+                                <td>Hecha</td>
+                            </tr>
+
+                            <tr>
+                                <td>Lunes 15/6/07</td>
+                                <td>0:42</td>
+                                <td>My Melody</td>
+                                <td>Trepanación</td>
+                                <td>Hecha</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
-            <div> </div>
         </main>
 
         <footer>
-
+            <div class="col-12 row text-center">
+                <p>by Iara & Felipe :3</p> 
+            </div>
         </footer>
     </body>
 </html>
