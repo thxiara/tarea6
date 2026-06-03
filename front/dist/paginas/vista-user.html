@@ -44,11 +44,59 @@
 
                 <div id="no_cita" class= "d-flex flex-column mx-auto align-items-center p-4 rounded missing col-10 col-lg-5">
                     <p>No tiene ninguna cita</p>
-                    <button class="btn boton-a">Agendar cita</button>
+                    <button class="btn boton-a" data-bs-toggle="modal" data-bs-target="#addCita">Agendar cita</button>
                 </div>
 
-                <div id="yes_cita">
-                    <p>algo</p>
+                <div id="AddCita" class="modal">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h3>Agendar nueva cita</h3>
+                                <button class="btn-close" data-bs-dismiss="modal"> </button>
+                            </div>
+
+                            <div class="modal-body">
+                                <form class="d-flex flex-row flex-wrap gap-3 justify-content-center">
+                                    <div class="col-5">
+                                        <label for="date">Fecha</label>
+                                        <input id="date" class="form-control" type="date">
+                                    </div>
+                                    
+                                     <div class="col-5">
+                                        <label for="time">Hora</label>
+                                        <input id="time" class="form-control" type="time">
+                                    </div>
+                                    
+                                    <div class="col-5">
+                                        <label for="firstName">Nombre</label>
+                                        <input id="firstName" class="form-control" type="text">
+                                    </div>
+    
+                                    <div class="col-5">
+                                        <label for="lastName">Apellidos</label>
+                                        <input id="lastName" class="form-control" type="text">
+                                    </div>
+                                    
+                                    <div class="col-5">
+                                        <label for="phone">Teléfono</label>
+                                        <input id="phone" class="form-control" type="tel">
+                                    </div>
+    
+                                     <div class="col-5">
+                                        <label for="treatment">Tratamiento</label>
+                                        <select id="treatment" class="form-select">
+                                            <option selected hidden value="">Motivo de cita</option>
+                                            <option value="">Trepanación</option>
+                                            <option value="">Juxtaposición dental</option>
+                                            <option value="">Carroplegía pseudo-vascular</option>
+                                        </select>
+                                    </div>
+                                    
+                                    <input type="submit" class="btn boton-a" value="Agendar">
+                                </form>   
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="col-12 col-lg-10 mx-auto table-responsive" id="cita_history">
