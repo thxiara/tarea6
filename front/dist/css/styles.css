@@ -102,7 +102,7 @@ footer p{
     color:var(--color-highlight);
     border:solid 2px var(--color-alt);
 }
-.boton-a:hover, .boton-a:focus{
+.boton-a:hover {
     background-color:none;
     border:solid 2px var(--color-alt);
     color:var(--color-alt);
@@ -112,7 +112,7 @@ footer p{
     border:solid 2px var(--color-alt);
     color:var(--color-alt);
 }
-.boton-b:hover, .boton-b:focus{
+.boton-b:hover {
     background-color:var(--color-alt);
     color:var(--color-highlight);
 }
